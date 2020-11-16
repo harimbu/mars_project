@@ -16,6 +16,9 @@
     <title>Mars:Project</title>
   </head>
   <body>
+    <!-- 탑 버튼 -->
+    <div class="go_top"><i class="xi-arrow-up"></i></div>
+
     <!-- 헤더 -->
     <div class="header">
       <div class="container flex">
@@ -152,12 +155,43 @@
     </footer>
 
     <script>
+      // 헤더 스크립트
+      var header = $('.header')
+      var goTop = $('.go_top')
+
+      $(window).scroll(function () {
+        var scrollTopValue = $(document).scrollTop()
+
+        if (scrollTopValue > 0) {
+          header.addClass('active')
+        } else {
+          header.removeClass('active')
+        }
+
+        if (scrollTopValue > 900) {
+          goTop.fadeIn()
+        } else {
+          goTop.fadeOut()
+        }
+      })
+
+      goTop.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 400)
+      })
+
+      // 슬라이드
       $('.slide_01').slick({
         dots: true,
         autoplay: true,
         autoplaySpeed: 5000,
         prevArrow: $('.prev'),
         nextArrow: $('.next')
+      })
+
+      $('.slide_02').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000
       })
     </script>
   </body>
