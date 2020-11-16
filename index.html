@@ -44,10 +44,10 @@
       </div>
 
       <!-- 슬라이드 화살표 -->
-      <!-- <div class="arrow">
+      <div class="arrow">
         <span class="prev"><img src="./images/prev_btn.png" alt="btn" /></span>
         <span class="next"><img src="./images/next_btn.png" alt="btn" /></span>
-      </div> -->
+      </div>
 
       <!-- 슬라이드 텍스트 -->
       <div class="container">
@@ -151,6 +151,14 @@
       </div>
     </footer>
 
-    <script></script>
+    <script>
+      $('.slide_01').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+      })
+    </script>
   </body>
 </html>
