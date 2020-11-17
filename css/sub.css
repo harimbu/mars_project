@@ -48,10 +48,30 @@
 
 /* 버튼 */
 .gallery_btns {
+  text-align: center;
+  margin: 120px 0 60px;
+}
+
+.gallery_btn {
   width: 120px;
   height: 40px;
-  color: #fff;
-  background: var(--gray-dark);
+  color: var(--gray-dark);
+  background: #fff;
   line-height: 40px;
   text-align: center;
+  border: 1px solid var(--gray-dark);
+  margin: 0 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.gallery_btn.on {
+  background: var(--gray-dark);
+  color: #fff;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 23.33%;
+  margin: 10px;
 }
