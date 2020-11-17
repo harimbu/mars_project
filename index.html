@@ -206,12 +206,91 @@
       </div>
     </section>
 
+    <!-- 섹션-03 -->
+    <section class="section_03">
+      <div class="container">
+        <div class="title_area">
+          <h3>우주! 어디까지 알고 있니?</h3>
+          <p>우주의 탄생과 진화 그리고 그 종말에 관한 이야기, 지금 시작해 볼까요.</p>
+          <a href="#" class="view_all">전체보기<i class="xi-angle-right-min"></i></a>
+        </div>
+
+        <ul class="cards">
+          <li class="card">
+            <img src="./images/main/space_01.jpg" alt="sapce" />
+            <div class="dimm"></div>
+            <h4>Jupiter</h4>
+            <i class="xi-plus-circle-o"></i>
+          </li>
+          <li class="card">
+            <img src="./images/main/space_02.jpg" alt="sapce" />
+            <div class="dimm"></div>
+            <h4>galaxy</h4>
+            <i class="xi-plus-circle-o"></i>
+          </li>
+          <li class="card">
+            <img src="./images/main/space_03.jpg" alt="sapce" />
+            <div class="dimm"></div>
+            <h4>Moon transform</h4>
+            <i class="xi-plus-circle-o"></i>
+          </li>
+          <li class="card">
+            <img src="./images/main/space_04.jpg" alt="sapce" />
+            <div class="dimm"></div>
+            <h4>Alone in the space</h4>
+            <i class="xi-plus-circle-o"></i>
+          </li>
+          <li class="card">
+            <img src="./images/main/space_05.jpg" alt="sapce" />
+            <div class="dimm"></div>
+            <h4>space Man</h4>
+            <i class="xi-plus-circle-o"></i>
+          </li>
+          <li class="card">
+            <img src="./images/main/space_06.jpg" alt="sapce" />
+            <div class="dimm"></div>
+            <h4>star Light</h4>
+            <i class="xi-plus-circle-o"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 섹션-04 -->
+    <section class="section_04">
+      <div class="container">
+        <div class="title_area">
+          <h3>오시는 길</h3>
+          <p>우주로 가는 길은 당신과 아주 가까운 곳에 있습니다.</p>
+        </div>
+      </div>
+      <!-- 지도코드 -->
+      <div
+        id="daumRoughmapContainer1605580815492"
+        class="root_daum_roughmap root_daum_roughmap_landing daum_map"
+      ></div>
+    </section>
+
     <!-- 풋터 -->
     <footer>
       <div class="container">
         <h2>풋터내용</h2>
       </div>
     </footer>
+
+    <script
+      charset="UTF-8"
+      class="daum_roughmap_loader_script"
+      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+    ></script>
+
+    <script charset="UTF-8">
+      new daum.roughmap.Lander({
+        timestamp: '1605580815492',
+        key: '22ycf',
+        mapHeight: '500'
+      }).render()
+    </script>
 
     <script>
       // 전체메뉴
