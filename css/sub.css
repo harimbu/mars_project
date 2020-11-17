@@ -75,3 +75,13 @@
   width: 23.33%;
   margin: 10px;
 }
+
+.grid-item {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.mfp-bg {
+  background: #000;
+  opacity: 0.86;
+}
