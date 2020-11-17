@@ -49,6 +49,29 @@ section {
   z-index: 10000;
 }
 
+.btn {
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.bg_1 {
+  background: var(--accent);
+}
+
+.bg_2 {
+  background: var(--accent2);
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
 /* 전체메뉴 */
 .menu {
   position: fixed;
@@ -237,6 +260,32 @@ section {
   background-image: url('../images/main/main_slide_03.jpg');
 }
 
+/* 슬라이드 텍스트 */
+.slide_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  max-width: 1160px;
+  width: 90%;
+}
+
+.slide_text h2 {
+  width: 64%;
+}
+
+.slide_text h2 span {
+  color: var(--accent);
+}
+
+.slide_text p {
+  font-size: 14px;
+  color: var(--gray-light);
+  margin: 34px 0 40px;
+  width: 50%;
+}
+
 /* slick_custom */
 .main_slide .slick-dots {
   bottom: 30px;
@@ -266,4 +315,53 @@ section {
 
 .main_slide .slick-dots li button:before {
   display: none;
+}
+
+/* 섹션-01 */
+.title_area {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.slide_02 .slide {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.slide_02 .slide h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.slide_02 .slick-dots {
+  top: -50px;
+  text-align: right;
+}
+
+.slide_02 .slick-dots li button::before {
+  font-size: 18px;
+}
+
+/* 섹션-02 */
+.view_all {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--gray-mid);
+}
+
+.view_all:hover {
+  text-decoration: underline;
+}
+
+.section_02 .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }

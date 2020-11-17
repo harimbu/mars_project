@@ -114,17 +114,15 @@
       </div>
 
       <!-- 슬라이드 텍스트 -->
-      <div class="container">
-        <div class="slide_text">
-          <h2><span>화성이주 프로젝트</span>에 여러분의 참여를 기다립니다!</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo laboriosam tenetur
-            excepturi assumenda ea similique dolores
-          </p>
-          <div class="btns">
-            <a href="#" class="btn bg_1">내용보기</a>
-            <a href="#" class="btn bg_2">신청하기</a>
-          </div>
+      <div class="slide_text">
+        <h2><span>화성이주 프로젝트</span>에 여러분의 참여를 기다립니다!</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo laboriosam tenetur
+          excepturi assumenda ea similique dolores
+        </p>
+        <div class="btns">
+          <a href="#" class="btn bg_1 mr20">내용보기</a>
+          <a href="#" class="btn bg_2">신청하기</a>
         </div>
       </div>
     </div>
@@ -216,6 +214,17 @@
     </footer>
 
     <script>
+      // 전체메뉴
+      var hamburger = $('.hamburger')
+      var close = $('.menu .close')
+      var menu = $('.menu')
+      hamburger.click(function () {
+        menu.show()
+      })
+      close.click(function () {
+        menu.hide()
+      })
+
       // 헤더 스크립트
       var header = $('.header')
       var goTop = $('.go_top')
@@ -252,7 +261,8 @@
       $('.slide_02').slick({
         dots: true,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 5000,
+        fade: true
       })
     </script>
   </body>
